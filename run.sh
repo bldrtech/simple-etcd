@@ -11,7 +11,7 @@ Environment="ETCD_PEER_CLIENT_CERT_AUTH=true"
 # Listeners
 Environment="ETCD_LISTEN_CLIENT_URLS=https://0.0.0.0:2379"
 
-ETCD_CMD="/bin/etcd -data-dir=/data -listen-peer-urls=${PEER_URLS} -listen-client-urls=${CLIENT_URLS} $*"
+ETCD_CMD="/bin/etcd -data-dir=/data $*"
 echo -e "Running '$ETCD_CMD'\nBEGIN ETCD OUTPUT\n"
 
 exec $ETCD_CMD

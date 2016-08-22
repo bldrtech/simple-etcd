@@ -43,7 +43,7 @@ docker run \
   --ip ${ip} \
   -v ${path}${name}:/data \
   -v ${certpath}:/etc/ssl/etcd:ro \
-  actiondan/simple-etcd:latest \
+  bldrtech/simple-etcd:latest \
   --name ${name} \
   --initial-advertise-peer-urls ${proto}://${ip}:2380 \
   --listen-peer-urls ${proto}://${ip}:2380 \

@@ -1,6 +1,6 @@
 # simple-etcd
 # tls etcd cluster with docker containers
-#
+# Example run
 ```
 docker run \
   -d \
